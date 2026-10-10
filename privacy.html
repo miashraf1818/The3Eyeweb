@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy: ThirdEye</title>
+  <meta name="description" content="How ThirdEye collects, uses and protects your data." />
+  <meta name="theme-color" content="#F6F4EF" />
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div hidden id="icon-host"></div>
+
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__brand" aria-label="ThirdEye home">
+        <img src="assets/logo.png" alt="" class="nav__logo" />
+        <span class="nav__name">ThirdEye</span>
+      </a>
+      <a href="index.html" class="btn btn--ghost nav__cta">Back to site</a>
+    </div>
+  </header>
+
+  <main class="legal">
+    <div class="container container--narrow">
+      <a href="index.html" class="legal__back"><svg class="icon"><use href="#i-arrow-right"></use></svg> Back to home</a>
+      <h1>Privacy Policy</h1>
+      <p class="legal__updated">Last updated: [TODO: publish date]</p>
+
+      <div class="legal__notice">
+        This is a working draft prepared from the app's known behaviour. It is not legal advice.
+        Before you publish, replace every [TODO] with your real details and have a qualified
+        lawyer review the final text for compliance with the Digital Personal Data Protection
+        Act, 2023 and other laws that apply to you.
+      </div>
+
+      <p>This Privacy Policy explains how [TODO: legal entity name] ("we", "us") handles personal
+      data when you use the ThirdEye mobile application and related services ("the app").</p>
+
+      <h2>1. Who we are</h2>
+      <p>The app is operated by [TODO: legal entity name], [TODO: registered address]. For any
+      privacy question or request you can contact us at [TODO: contact email].</p>
+
+      <h2>2. Data we collect</h2>
+      <ul>
+        <li><strong>Location data.</strong> With your permission, the app uses your device
+        location to show nearby road conditions and to attach your reports to the correct road.</li>
+        <li><strong>Hazard reports.</strong> The category, location and time of hazards you report.</li>
+        <li><strong>Evidence photos.</strong> If you choose to add a photo to a report, it is
+        uploaded as private evidence. Photos are used only for moderation and are not shown
+        publicly to other users.</li>
+        <li><strong>Account data.</strong> [TODO: confirm what account details you collect, for
+        example email, phone or sign-in identifier.]</li>
+        <li><strong>Device and usage data.</strong> [TODO: confirm any diagnostics, crash logs or
+        analytics you collect, and the provider used.]</li>
+      </ul>
+
+      <h2>3. How we use your data</h2>
+      <ul>
+        <li>To show live road conditions and route you around hazards.</li>
+        <li>To let the community confirm or dispute reports so the map stays accurate.</li>
+        <li>To review evidence photos for moderation and to prevent abuse.</li>
+        <li>To operate, secure and improve the app.</li>
+      </ul>
+
+      <h2>4. What other users can see</h2>
+      <p>Other users see only the hazard category, its location and how fresh it is. They do not
+      see who filed a report, and they never see evidence photos.</p>
+
+      <h2>5. Service providers</h2>
+      <p>We use third-party providers to run the app, including Supabase for database and storage
+      hosting. [TODO: list any other processors, for example maps, routing, analytics or crash
+      reporting, and link their privacy policies.] These providers process data on our behalf under
+      their own terms.</p>
+
+      <h2>6. Data retention</h2>
+      <p>Hazard reports expire automatically after a set time based on their category. [TODO:
+      state how long accounts, evidence photos and logs are retained, and your deletion schedule.]</p>
+
+      <h2>7. Your rights</h2>
+      <p>Depending on where you live, you may have the right to access, correct, delete or restrict
+      the use of your personal data, and to withdraw consent. To make a request, contact
+      [TODO: contact email].</p>
+
+      <h2>8. Grievance officer</h2>
+      <p>In line with Indian law, you can raise complaints with our grievance officer:
+      [TODO: grievance officer name], [TODO: grievance officer email].</p>
+
+      <h2>9. Children</h2>
+      <p>The app is not directed at children. [TODO: confirm your minimum age and how you handle
+      underage users under the DPDP Act.]</p>
+
+      <h2>10. Changes to this policy</h2>
+      <p>We may update this policy from time to time. We will post the new version here and update
+      the date above.</p>
+
+      <h2>11. Contact</h2>
+      <p>Questions about this policy? Email [TODO: contact email].</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="assets/logo.png" alt="" class="footer__logo" />
+        <div><strong>ThirdEye</strong><span>SEE. REPORT. SAVE.</span></div>
+      </div>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms and Conditions</a>
+      </nav>
+      <p class="footer__copy">&copy; <span id="year"></span> ThirdEye. Built for Indian roads.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

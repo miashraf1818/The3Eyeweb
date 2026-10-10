@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ThirdEye: See. Report. Save.</title>
+  <meta name="description" content="ThirdEye is a crowdsourced road app for India. Drivers report potholes, waterlogging, road blocks and checkpoints, and the app routes you around them." />
+  <meta name="theme-color" content="#F6F4EF" />
+
+  <meta property="og:title" content="ThirdEye: See. Report. Save." />
+  <meta property="og:description" content="Crowdsourced road reports and hazard-avoiding navigation, built for Indian roads." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/og-image.svg" />
+  <meta property="og:image:type" content="image/svg+xml" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="icon" href="assets/favicon-16.png" sizes="16x16" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div hidden id="icon-host"></div>
+
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="nav__brand" aria-label="ThirdEye home">
+        <img src="assets/logo.png" alt="" class="nav__logo" width="32" height="32" />
+        <span class="nav__name">ThirdEye</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#reports">What you can report</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a href="#download" class="btn btn--ink nav__cta">Get the app</a>
+    </div>
+  </header>
+
+  <main>
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <div class="lane" aria-hidden="true"></div>
+        <h1 class="hero__title">See the road before you <mark>drive it</mark></h1>
+        <p class="hero__tagline">SEE. REPORT. SAVE.</p>
+        <p class="hero__sub">
+          ThirdEye is a community-powered navigation app. Drivers report potholes,
+          waterlogging, road blocks and checkpoints, and the app routes you around them.
+        </p>
+        <div class="hero__actions">
+          <a href="#download" class="btn btn--primary">Get the app</a>
+          <a href="#how" class="btn btn--ghost">See how it works</a>
+        </div>
+        <div class="hero__hazards">
+          <div class="hero__hazard-icons" aria-hidden="true">
+            <img src="assets/hazards/pothole.png" alt="" width="36" height="36" />
+            <img src="assets/hazards/waterlogging.png" alt="" width="36" height="36" />
+            <img src="assets/hazards/road_block.png" alt="" width="36" height="36" />
+            <img src="assets/hazards/traffic.png" alt="" width="36" height="36" />
+            <img src="assets/hazards/camera.png" alt="" width="36" height="36" />
+          </div>
+          <p class="hero__hazards-text">Potholes, flooding, closures, police checkpoints, traffic cameras and more.</p>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="phone">
+          <div class="phone__screen">
+            <!-- Illustration of the home screen, built from the app's real theme, icons and labels.
+                 TODO: replace with a real device screenshot before launch. -->
+            <img src="assets/screenshots/home-map.png" alt="Illustration of the ThirdEye map with reported hazards along a route" width="1080" height="2280" />
+          </div>
+        </div>
+        <p class="phone__caption">Illustration of the app's map screen</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Strip -->
+  <section class="strip">
+    <div class="container strip__inner">
+      <span class="strip__item"><svg class="icon" aria-hidden="true"><use href="#i-radio"></use></svg> Live hazard reports</span>
+      <span class="strip__item"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Confirmed by other drivers</span>
+      <span class="strip__item"><svg class="icon" aria-hidden="true"><use href="#i-route"></use></svg> Routes around hazards</span>
+      <span class="strip__item"><svg class="icon" aria-hidden="true"><use href="#i-shield"></use></svg> Anonymous reporting</span>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="label">Why ThirdEye</span>
+        <h2>Navigation that knows the road's real condition</h2>
+        <p>Conventional GPS sees traffic. ThirdEye also sees the pothole, the flooded underpass and the barricade, then routes you around them.</p>
+      </div>
+      <div class="grid grid--3">
+        <article class="card feature reveal">
+          <div class="feature__icon"><svg class="icon" aria-hidden="true"><use href="#i-route"></use></svg></div>
+          <h3>Hazard-aware routing</h3>
+          <p>Routes are checked against live, confirmed reports, so you avoid trouble instead of finding it.</p>
+        </article>
+        <article class="card feature reveal">
+          <div class="feature__icon"><svg class="icon" aria-hidden="true"><use href="#i-radio"></use></svg></div>
+          <h3>Real-time reports</h3>
+          <p>Drivers report hazards as they see them, so you get a heads-up before you reach the spot.</p>
+        </article>
+        <article class="card feature reveal">
+          <div class="feature__icon"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg></div>
+          <h3>Community verified</h3>
+          <p>Other drivers confirm or dispute each report as they pass, which keeps the map accurate.</p>
+        </article>
+        <article class="card feature reveal">
+          <div class="feature__icon"><svg class="icon" aria-hidden="true"><use href="#i-timer"></use></svg></div>
+          <h3>Reports expire on their own</h3>
+          <p>Each report has a lifespan based on its type. Waterlogging clears and roadwork ends, so old reports drop off the map.</p>
+        </article>
+        <article class="card feature reveal">
+          <div class="feature__icon"><svg class="icon" aria-hidden="true"><use href="#i-shield"></use></svg></div>
+          <h3>Private by design</h3>
+          <p>Reporters stay anonymous. Evidence photos are private and used only for moderation, never shown publicly.</p>
+        </article>
+        <article class="card feature reveal">
+          <div class="feature__icon"><svg class="icon" aria-hidden="true"><use href="#i-map"></use></svg></div>
+          <h3>Built for Indian roads</h3>
+          <p>Monsoon flooding, processions, excavation and checkpoints: the conditions other map apps overlook.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="section section--alt" id="how">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="label">How it works</span>
+        <h2>Three steps to a safer drive</h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <div class="step__num">01</div>
+          <div class="step__head"><svg class="icon" aria-hidden="true"><use href="#i-eye"></use></svg><h3>See</h3></div>
+          <p>Open the live map and check confirmed road conditions near you and along your route.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step__num">02</div>
+          <div class="step__head"><svg class="icon" aria-hidden="true"><use href="#i-flag"></use></svg><h3>Report</h3></div>
+          <p>Spotted a hazard? Report it in a few taps. Add a photo as private evidence if you want.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step__num">03</div>
+          <div class="step__head"><svg class="icon" aria-hidden="true"><use href="#i-navigation"></use></svg><h3>Save</h3></div>
+          <p>ThirdEye routes you, and everyone behind you, around the problem.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What you can report (categories from src/constants/incidentTypes.ts) -->
+  <section class="section" id="reports">
+    <div class="container">
+      <div class="section__head section__head--center reveal">
+        <span class="label">On the map</span>
+        <h2>What you can report</h2>
+        <p>The same categories and icons you see in the app.</p>
+      </div>
+      <div class="hazard-groups">
+        <div class="hazard-group reveal">
+          <h3>Road hazards</h3>
+          <ul class="hazard-list">
+            <li><img src="assets/hazards/pothole.png" alt="" width="36" height="36" /> Pothole</li>
+            <li><img src="assets/hazards/waterlogging.png" alt="" width="36" height="36" /> Waterlogging</li>
+            <li><img src="assets/hazards/road_block.png" alt="" width="36" height="36" /> Road block</li>
+            <li><img src="assets/hazards/construction.png" alt="" width="36" height="36" /> Construction</li>
+            <li><img src="assets/hazards/fallen_tree.png" alt="" width="36" height="36" /> Fallen tree</li>
+            <li><img src="assets/hazards/animal.png" alt="" width="36" height="36" /> Animal on road</li>
+            <li><img src="assets/hazards/vehicle_breakdown.png" alt="" width="36" height="36" /> Vehicle breakdown</li>
+          </ul>
+        </div>
+        <div class="hazard-group reveal">
+          <h3>Traffic and enforcement</h3>
+          <ul class="hazard-list">
+            <li><img src="assets/hazards/accident.png" alt="" width="36" height="36" /> Accident</li>
+            <li><img src="assets/hazards/signal_problem.png" alt="" width="36" height="36" /> Signal problem</li>
+            <li><img src="assets/hazards/traffic.png" alt="" width="36" height="36" /> Police checkpoint</li>
+            <li><img src="assets/hazards/police_presence.png" alt="" width="36" height="36" /> Police presence</li>
+            <li><img src="assets/hazards/camera.png" alt="" width="36" height="36" /> Speed camera</li>
+            <li><img src="assets/hazards/camera.png" alt="" width="36" height="36" /> Red-light and CCTV cameras</li>
+          </ul>
+        </div>
+      </div>
+      <p class="hazard-note">Something else in the way? Use <strong>Other</strong> to report it.</p>
+    </div>
+  </section>
+
+  <!-- Download -->
+  <section class="cta" id="download">
+    <div class="container">
+      <div class="cta__inner reveal">
+        <img src="assets/logo.png" alt="ThirdEye logo" class="cta__logo" width="64" height="64" />
+        <h2>See. Report. Save.</h2>
+        <p>ThirdEye is launching on Android first, with iOS to follow.</p>
+        <div class="cta__actions">
+          <a href="#" class="store-badge" aria-label="Google Play, coming soon">
+            <span class="store-badge__sub">Coming soon on</span>
+            <span class="store-badge__main">Google Play</span>
+          </a>
+          <a href="#" class="store-badge" aria-label="App Store, coming soon">
+            <span class="store-badge__sub">Coming soon on</span>
+            <span class="store-badge__main">App Store</span>
+          </a>
+        </div>
+        <p class="cta__note">Initial beta region: Mysuru, Karnataka</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--alt" id="faq">
+    <div class="container container--narrow">
+      <div class="section__head section__head--center reveal">
+        <span class="label">Questions</span>
+        <h2>Frequently asked</h2>
+      </div>
+      <div class="faq">
+        <details class="faq__item">
+          <summary>Does ThirdEye cost anything? <span class="marker" aria-hidden="true">+</span></summary>
+          <p>ThirdEye is free to download, and you can view and report hazards without paying. The app also has an optional Pro plan. [TODO: confirm Pro pricing and features before launch.]</p>
+        </details>
+        <details class="faq__item">
+          <summary>Are my reports anonymous? <span class="marker" aria-hidden="true">+</span></summary>
+          <p>Yes. Other users see the hazard category, its location and how recent it is, never who reported it. Evidence photos stay private and are used only for moderation.</p>
+        </details>
+        <details class="faq__item">
+          <summary>How do reports stay accurate? <span class="marker" aria-hidden="true">+</span></summary>
+          <p>Drivers confirm or dispute reports as they pass, and every report expires after a set time based on its type. Old reports fall off the map on their own.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Which devices are supported? <span class="marker" aria-hidden="true">+</span></summary>
+          <p>ThirdEye is launching on Android first, with an iOS release planned.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Where is it available? <span class="marker" aria-hidden="true">+</span></summary>
+          <p>The first beta covers Mysuru, Karnataka. More cities will follow.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="assets/logo.png" alt="" class="footer__logo" width="36" height="36" />
+        <div>
+          <strong>ThirdEye</strong>
+          <span>SEE. REPORT. SAVE.</span>
+        </div>
+      </div>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#faq">FAQ</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms and Conditions</a>
+      </nav>
+      <p class="footer__copy">&copy; <span id="year"></span> ThirdEye. Built for Indian roads.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
