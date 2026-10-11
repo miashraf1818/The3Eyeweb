@@ -20,7 +20,7 @@ website/
 │   ├── apple-touch-icon.png # 180x180 apple touch icon
 │   ├── icons.svg            # Lucide-style SVG icon sprite (no emoji)
 │   ├── hazards/             # The app's own hazard icons (128x128 PNG)
-│   ├── screenshots/         # home-map.png: home screen illustration (replace with real capture)
+│   ├── screenshots/         # Real device screenshots (app-map, app-route, app-alerts)
 │   └── og-image.svg         # Open Graph card
 └── README.md
 ```
@@ -49,11 +49,20 @@ Fully static. Set the publish/root directory to `website` on Netlify, Vercel, Gi
 - No custom cursor. Hover changes colour or border only, nothing moves or resizes. Images have fixed width/height to avoid layout shift.
 - Typography: Inter for everything, Roboto Mono for small labels.
 
+## Screenshots
+
+`assets/screenshots/` holds real captures from the Android app on a device
+(738x1600, compressed to JPEG). `app-map.jpg` is the hero image; the other two
+appear in the "Screens" section. To refresh them, capture on device and
+re-compress with `sips -s format jpeg -s formatOptions 82`.
+
+Note: `app-map.jpg` shows the satellite basemap. A capture of the default
+dark or light basemap would show the hazard pins and route line better.
+
 ## Before launch (open items)
 
 These are deliberately left as TODO rather than guessed:
 
-1. **App screenshot.** The hero shows `assets/screenshots/home-map.png`, an illustration of the home screen built from the app's real theme colours, hazard icons and labels, captioned "Illustration of the app's map screen". It is not a real device capture. Replace it with a real portrait screenshot (1080 x 2280) before launch and remove the caption.
 2. **Pro plan copy.** The FAQ mentions an optional Pro plan (the app has a `PremiumScreen` with ₹149/mo and ₹999/yr). Confirm pricing and features, then replace the TODO.
 3. **Legal pages.** `privacy.html` and `terms.html` are drafts built from the app's known behaviour. Replace every `[TODO: ...]` with your real business details (entity name, address, contact email, grievance officer, jurisdiction, retention periods) and have a lawyer review them.
 4. **Store links.** The Google Play / App Store badges link to `#`. Add the real listing URLs once live.

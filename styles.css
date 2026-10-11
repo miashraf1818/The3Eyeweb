@@ -294,3 +294,30 @@ h1, h2, h3 { color: var(--ink); line-height: 1.1; letter-spacing: -0.025em; text
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
   .reveal { opacity: 1; transition: none; }
 }
+
+/* ---- Screenshot gallery ---- */
+.shots {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  max-width: 680px;
+  margin: 0 auto;
+}
+.shot { margin: 0; text-align: center; }
+.shot img {
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  background: var(--ink);
+  box-shadow: 0 14px 34px rgba(20, 22, 26, 0.14);
+}
+.shot figcaption {
+  margin-top: 14px;
+  font-size: 14.5px;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+@media (max-width: 560px) {
+  .shots { grid-template-columns: 1fr; gap: 32px; max-width: 320px; }
+}
